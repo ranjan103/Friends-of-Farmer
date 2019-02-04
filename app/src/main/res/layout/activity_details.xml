@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView2"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    tools:context="DetailsActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="399dp"
+            android:layout_height="46dp"
+
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="224dp"
+            android:layout_marginEnd="8dp"
+            android:background="#CF4690"
+            android:gravity="center"
+            android:text="@string/textView"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="403dp"
+            android:layout_height="220dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/index"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp"
+            tools:layout_editor_absoluteY="1dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+
+            android:layout_width="245dp"
+            android:layout_height="40dp"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/textView2"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="@+id/editText4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/editText"
+            android:layout_width="392dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="124dp"
+            android:layout_marginEnd="8dp"
+            android:background="#FF9800"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:onClick="OnProgress"
+            android:text="@string/editText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/radioGroup"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="186dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+
+
+            android:layout_marginTop="60dp"
+            android:text="Select Quality :"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:ignore="MissingConstraints" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="87dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="116dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.253"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText4"
+            tools:ignore="MissingConstraints">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="101dp"
+                android:layout_height="88dp"
+                android:text="@string/radioButton"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="466dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radioButton2"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="124dp"
+                tools:layout_editor_absoluteY="495dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radioButton3"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="301dp"
+                tools:layout_editor_absoluteY="495dp" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.916"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="MissingConstraints"
+            android:autofillHints="" tools:targetApi="o"/>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
